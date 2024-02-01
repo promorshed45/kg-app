@@ -13,7 +13,7 @@ import teacher4 from '@/assets/teacher4.jpg';
 const Teacher = () => {
     return (
         <div>
-            <section class="text-gray-800 body-font">
+            <section class="text-gray-800 body-font dark:bg-slate-950 dark:text-gray-400">
                 <div class="container px-24 py-24 mx-auto">
                     <div class="flex flex-col text-center w-full mb-10">
                         <h1 class="md:text-5xl text-2xl font-semibold title-font mb-4 "> Our Best Teachers </h1>

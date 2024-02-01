@@ -6,7 +6,7 @@ import { MdOutlineDraw } from "react-icons/md";
 const Offer = () => {
   return (
     <div>
-      <section class="text-gray-600 body-font">
+      <section class="text-gray-600 body-font dark:bg-slate-950">
         <div class="container px-24 py-24 mx-auto">
           <div class="flex flex-col text-center w-full mb-10">
             <h1 class="md:text-5xl text-2xl font-semibold title-font mb-4 text-teal-400"> Our Offerings </h1>
@@ -23,7 +23,7 @@ const Offer = () => {
                     </span>
                   </div>
                 </div>
-                <h2 class="title-font font-semibold text-3xl text-gray-900"> Spots Class</h2>
+                <h2 class="title-font font-semibold text-3xl text-gray-900 dark:text-rose-600"> Spots Class</h2>
                 <p class="leading-relaxed"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, animi. </p>
                 <button className='px-7 py-2 rounded-md bg-teal-400 text-white'> Details </button>
               </div>
@@ -38,7 +38,7 @@ const Offer = () => {
                     </span>
                   </div>
                 </div>
-                <h2 class="title-font font-semibold text-3xl text-gray-900"> Drawing Class</h2>
+                <h2 class="title-font font-semibold text-3xl text-gray-900 dark:text-rose-600"> Drawing Class</h2>
                 <p class="leading-relaxed"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, animi. </p>
                 <button className='px-7 py-2 rounded-md bg-teal-400 text-white'> Details </button>
               </div>
@@ -53,7 +53,7 @@ const Offer = () => {
                     </span>
                   </div>
                 </div>
-                <h2 class="title-font font-semibold text-3xl text-gray-900"> Music Class</h2>
+                <h2 class="title-font font-semibold text-3xl text-gray-900 dark:text-rose-600"> Music Class</h2>
                 <p class="leading-relaxed"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, animi. </p>
                 <button className='px-7 py-2 rounded-md bg-teal-400 text-white'> Details </button>
               </div>

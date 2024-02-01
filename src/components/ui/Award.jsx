@@ -7,7 +7,7 @@ import { IoIosArrowDropright } from "react-icons/io";
 const Award = () => {
     return (
         <div>
-            <section class="relative">
+            <section class="relative dark:text-gray-300 dark:bg-slate-950 pt-10">
                 <div class=" inset-0 to-transparent bg-gradient-to-r"> </div>
                 <div class=" mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
                     <div className="w-1/2 flex  mx-auto relative">
@@ -17,7 +17,7 @@ const Award = () => {
                         <Image className="absolute -z-0 -bottom-14 right-10 rotate-45 animate-bounce" src={trippleline} alt="Banner Shape" />
                     </div>
                     <div className="z-10 w-1/2 text-left ltr:sm:text-left rtl:sm:text-right">
-                        <h1 className="text-3xl font-extrabold md:text-5xl"> Best for Your Kids </h1>
+                        <h1 className="text-3xl font-extrabold md:text-5xl dark:text-rose-500"> Best for Your Kids </h1>
 
                         <p className="mt-4 max-w-lg sm:text-xl/relaxed">
                             Being brave isn’t always a grand gesture sometimes it just means having a go attempting that difficult question, offering an answer in a lesson when you’re simply really trying new.

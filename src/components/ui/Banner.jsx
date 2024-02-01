@@ -15,7 +15,7 @@ const Banner = () => {
                 <div className="mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
                     <div className="z-10 w-1/2 text-left ltr:sm:text-left rtl:sm:text-right">
                         <h1 className="bg-gradient-to-r from-rose-500 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-7xl">Best Children’s <strong className="block font-extrabold text-teal-500">Education</strong></h1>
-                        <p className="mt-4 max-w-lg sm:text-xl/relaxed">
+                        <p className="mt-4 max-w-lg sm:text-xl/relaxed dark:text-slate-950">
                             "Enriching young minds through dynamic, personalized learning, fostering curiosity, creativity, and a lifelong love for education, ensuring holistic development."
                         </p>
 

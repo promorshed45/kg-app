@@ -1,4 +1,4 @@
-import Home from '@/components/home/Home';
+import Home from '@/components/ui/Home';
 import React from 'react';
 
 const page = () => {

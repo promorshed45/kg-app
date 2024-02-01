@@ -19,7 +19,7 @@ const Footer = () => {
                                 <p className="text-5xl font-bold">MKA</p>
                             </div>
 
-                            <p className="mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left">
+                            <p className="mt-6 max-w-md text-center leading-relaxed text-slate-950 sm:max-w-xs sm:text-left">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa
                                 cum itaque neque.
                             </p>
@@ -64,23 +64,23 @@ const Footer = () => {
                                 <div className="text-center sm:text-left">
                                     <header className=" font-medium normal-case text-2xl text-rose-600"> Quick links </header>
                                     <ul className="mt-8 space-y-3 text-lg">
-                                        <li><a className="text-gray-700 transition hover:text-gray-700/75" href="/"> About</a> </li>
-                                        <li><a className="text-gray-700 transition hover:text-gray-700/75" href="/">  Programs </a> </li>
-                                        <li><a className="text-gray-700 transition hover:text-gray-700/75" href="/">  Classes </a> </li>
-                                        <li><a className="text-gray-700 transition hover:text-gray-700/75" href="/">  Shop </a> </li>
-                                        <li><a className="text-gray-700 transition hover:text-gray-700/75" href="/">  News </a> </li>
-                                        <li><a className="text-gray-700 transition hover:text-gray-700/75" href="/">  Contact </a> </li>
+                                        <li><a className="text-slate-950 transition hover:text-rose-500" href="/"> About</a> </li>
+                                        <li><a className="text-slate-950 transition hover:text-rose-500" href="/">  Programs </a> </li>
+                                        <li><a className="text-slate-950 transition hover:text-rose-500" href="/">  Classes </a> </li>
+                                        <li><a className="text-slate-950 transition hover:text-rose-500" href="/">  Shop </a> </li>
+                                        <li><a className="text-slate-950 transition hover:text-rose-500" href="/">  News </a> </li>
+                                        <li><a className="text-slate-950 transition hover:text-rose-500" href="/">  Contact </a> </li>
                                     </ul>
                                 </div>
-                                <div className="text-center sm:text-left">
+                                <div className="text-center sm:text-left text-slate-950">
                                     <header className=" font-medium normal-case text-2xl text-rose-600"> Programs </header>
                                     <ul className="mt-8 space-y-3 text-lg">
-                                        <li><a className="text-gray-700 transition hover:text-gray-700/75" href="/"> Play School </a> </li>
-                                        <li><a className="text-gray-700 transition hover:text-gray-700/75" href="/">  Nursery </a> </li>
-                                        <li><a className="text-gray-700 transition hover:text-gray-700/75" href="/">  Junior Kg </a> </li>
-                                        <li><a className="text-gray-700 transition hover:text-gray-700/75" href="/">  Senior Kg </a> </li>
-                                        <li><a className="text-gray-700 transition hover:text-gray-700/75" href="/">  Holiday Camp </a> </li>
-                                        <li><a className="text-gray-700 transition hover:text-gray-700/75" href="/">  Day Care </a> </li>
+                                        <li><a className="text-slate-950 transition hover:text-rose-500" href="/"> Play School </a> </li>
+                                        <li><a className="text-slate-950 transition hover:text-rose-500" href="/">  Nursery </a> </li>
+                                        <li><a className="text-slate-950 transition hover:text-rose-500" href="/">  Junior Kg </a> </li>
+                                        <li><a className="text-slate-950 transition hover:text-rose-500" href="/">  Senior Kg </a> </li>
+                                        <li><a className="text-slate-950 transition hover:text-rose-500" href="/">  Holiday Camp </a> </li>
+                                        <li><a className="text-slate-950 transition hover:text-rose-500" href="/">  Day Care </a> </li>
                                     </ul>
                                 </div>
                             </div>
@@ -88,18 +88,18 @@ const Footer = () => {
                                 <div>
                                     <header className=" font-medium normal-case text-2xl text-rose-600 text-center md:text-left"> Campus Address </header>
                                     <div className="text-left">
-                                        <div className="space-y-4 mt-8">
+                                        <div className="space-y-4 mt-8 text-slate-950">
                                             <div className="flex gap-5 items-center -ml-1">
                                                 <div> <IoLocationOutline className=" text-3xl text-teal-500 hover:text-rose-400 " /></div>
-                                                <div> <p className="text-lg">Aysha Ali Mansion(Ground Floor),  Pahartali, Raozan, Chattogram</p></div>
+                                                <div> <p className="text-lg hover:text-rose-500">Aysha Ali Mansion(Ground Floor),  Pahartali, Raozan, Chattogram</p></div>
                                             </div>
                                             <div className="flex gap-5 items-center">
                                                 <div> <MdOutlineMail  className="text-2xl text-teal-500 hover:text-rose-400 -mb-1"/></div>
-                                                <div> <p className="text-lg">  ctgmorshed45@gmail.com </p></div>
+                                                <div> <p className="text-lg hover:text-rose-500">  ctgmorshed45@gmail.com </p></div>
                                             </div>
                                             <div className="flex gap-5 items-center">
                                                 <div> <BsTelephone   className="text-2xl text-teal-500 hover:text-rose-400 -mb-1" /></div>
-                                                <div> <p className="text-lg">  +88 01851 363745 </p></div>
+                                                <div> <p className="text-lg hover:text-rose-500">  +88 01851 363745 </p></div>
                                             </div>
                                         </div>
                                     </div>

@@ -5,10 +5,10 @@ import { FaRegComments } from "react-icons/fa";
 const News = () => {
     return (
         <div>
-            <section className="px-20 mx-auto bg-gray-50">
+            <section className="px-20 mx-auto bg-gray-50 dark:bg-slate-950">
                 <div className="mx-auto max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24">
                     <div className="max-w-7xl items-end justify-between sm:flex sm:pe-6 lg:pe-8">
-                        <h1 class="md:text-5xl text-2xl font-semibold title-font mb-4 "> Campus News </h1>
+                        <h1 class="md:text-5xl text-2xl font-semibold title-font mb-4 dark:text-gray-300"> Campus News </h1>
                         <div className="mt-8 flex gap-4 lg:mt-0">
                             <button
                                 aria-label="Previous slide"
@@ -94,7 +94,7 @@ const News = () => {
 
                                     <h3 className="mt-4 text-lg font-medium text-gray-900"> How to be Learn Map Glove Easy Way for Garten </h3>
                                     <form className="mt-4">
-                                        <button className="block w-full rounded bg-yellow-400 p-3 text-md font-medium transition hover:scale-105">
+                                        <button className="block w-full text-slate-950 rounded bg-yellow-400 p-3 text-md font-medium transition hover:scale-105">
                                             Details
                                         </button>
                                     </form>
@@ -141,7 +141,7 @@ const News = () => {
 
                                     <h3 className="mt-4 text-lg font-medium text-gray-900"> How to be Learn Map Glove Easy Way for Garten </h3>
                                     <form className="mt-4">
-                                        <button className="block w-full rounded bg-yellow-400 p-3 text-md font-medium transition hover:scale-105">
+                                        <button className="block w-full text-slate-950 rounded bg-yellow-400 p-3 text-md font-medium transition hover:scale-105">
                                             Details
                                         </button>
                                     </form>
@@ -188,7 +188,7 @@ const News = () => {
 
                                     <h3 className="mt-4 text-lg font-medium text-gray-900"> How to be Learn Map Glove Easy Way for Garten </h3>
                                     <form className="mt-4">
-                                        <button className="block w-full rounded bg-yellow-400 p-3 text-md font-medium transition hover:scale-105">
+                                        <button className="block w-full text-slate-950 rounded bg-yellow-400 p-3 text-md font-medium transition hover:scale-105">
                                             Details
                                         </button>
                                     </form>

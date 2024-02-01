@@ -23,13 +23,13 @@ const Program = () => {
                                 className="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72" />
                             <div className="relative border border-gray-100 bg-white p-4">
                                 <div className="text-left ltr:sm:text-left rtl:sm:text-right">
-                                    <h1 className="text-3xl font-semibold md:text-4xl"> Play Group </h1>
+                                    <h1 className="text-3xl font-semibold md:text-4xl"> Nursery </h1>
                                     <p className="mt-2 md:text-lg/relaxed"> We will magical transform the School Sports Centre into a game field. </p>
                                     <div>
                                         <div className="mx-auto  bg-green-400 rounded-xl md:my-3">
                                             <div className="grid grid-cols-1 sm:grid-cols-3 py-3 divide-dashed sm:divide-x sm:divide-gray-100 text-white">
                                                 <div className="text-center">
-                                                    <p className="text-4xl font-semibold  md:text-xl"> 3-4 Yrs </p>
+                                                    <p className="text-4xl font-semibold  md:text-xl"> 1.5-3 Yrs </p>
                                                     <p className="text-lg font-medium"> age </p>
                                                 </div>
 
@@ -103,13 +103,13 @@ const Program = () => {
                                 className="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72" />
                             <div className="relative border border-gray-100 bg-white p-4">
                                 <div className="text-left ltr:sm:text-left rtl:sm:text-right">
-                                    <h1 className="text-3xl font-semibold md:text-4xl"> Play Group </h1>
+                                    <h1 className="text-3xl font-semibold md:text-4xl"> KG One </h1>
                                     <p className="mt-2 md:text-lg/relaxed"> We will magical transform the School Sports Centre into a game field. </p>
                                     <div>
                                         <div className="mx-auto  bg-blue-400 rounded-xl md:my-3">
                                             <div className="grid grid-cols-1 sm:grid-cols-3 py-3 divide-dashed sm:divide-x sm:divide-gray-100 text-white">
                                                 <div className="text-center">
-                                                    <p className="text-4xl font-semibold  md:text-xl"> 3-4 Yrs </p>
+                                                    <p className="text-4xl font-semibold  md:text-xl"> 5-6 Yrs </p>
                                                     <p className="text-lg font-medium"> age </p>
                                                 </div>
 

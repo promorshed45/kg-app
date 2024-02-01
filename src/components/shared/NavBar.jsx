@@ -1,9 +1,10 @@
 import React from 'react';
+import ThemeToggler from '../ui/ThemeToggler';
 
 const NavBar = () => {
   return (
-    <div>
-      <header class="bg-white">
+    <div class="sticky top-0 z-50 bg-white dark:bg-slate-950 shadow-md">
+      <header >
         <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <div class="flex h-16 items-center justify-between">
             <div class="md:flex md:items-center md:gap-12">
@@ -21,13 +22,13 @@ const NavBar = () => {
             <div class="hidden md:block">
               <nav aria-label="Global">
                 <ul class="flex items-center gap-6 text-lg">
-                  <li> <a class="text-gray-500 transition hover:text-rose-400" href="/"> Home </a>  </li>
-                  <li> <a class="text-gray-500 transition hover:text-rose-400" href="/"> About </a>  </li>
-                  <li> <a class="text-gray-500 transition hover:text-rose-400" href="/"> Programs </a>  </li>
-                  <li> <a class="text-gray-500 transition hover:text-rose-400" href="/"> News </a>  </li>
-                  <li> <a class="text-gray-500 transition hover:text-rose-400" href="/"> Store </a>  </li>
-                  <li> <a class="text-gray-500 transition hover:text-rose-400" href="/"> News </a>  </li>
-                  <li> <a class="text-gray-500 transition hover:text-rose-400" href="/"> Contact </a>  </li>               
+                  <li> <a class="text-slate-950 dark:text-gray-300 transition hover:text-rose-400" href="/"> Home </a>  </li>
+                  <li> <a class="text-slate-950 dark:text-gray-300 transition hover:text-rose-400" href="/"> About </a>  </li>
+                  <li> <a class="text-slate-950 dark:text-gray-300 transition hover:text-rose-400" href="/"> Programs </a>  </li>
+                  <li> <a class="text-slate-950 dark:text-gray-300 transition hover:text-rose-400" href="/"> Notice </a>  </li>
+                  <li> <a class="text-slate-950 dark:text-gray-300 transition hover:text-rose-400" href="/"> News </a>  </li>
+                  <li> <a class="text-slate-950 dark:text-gray-300 transition hover:text-rose-400" href="/"> Store </a>  </li>
+                  <li> <a class="text-slate-950 dark:text-gray-300 transition hover:text-rose-400" href="/"> Contact </a>  </li>               
                 </ul>
               </nav>
             </div>
@@ -40,7 +41,7 @@ const NavBar = () => {
                   <a  class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-500" href="/">  Register </a>
                 </div>
               </div>
-
+              <ThemeToggler/>
               <div class="block md:hidden">
                 <button class="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
                   <svg
