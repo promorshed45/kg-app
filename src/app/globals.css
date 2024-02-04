@@ -2,8 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+/* global.css */
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Custom styles for pagination bullets */
+  .swiper-pagination-bullet {
+    width: 8px; /* Bullet width */
+    height: 8px; /* Bullet height */
+    background-color: #ddd; /* Bullet color */
+    border-radius: 50%; /* Make bullet round */
+    margin: 0 4px; /* Spacing between bullets */
+  }
+  
+  /* Active bullet style */
+  .swiper-pagination-bullet-active {
+    background-color: #555; /* Active bullet color */
+  }
+  

@@ -9,6 +9,20 @@ module.exports = {
   theme: {
    
     extend: {
+      colors: {
+        primary: '#14B8A6',
+        primaryLight: '#2DD4BF',
+        primaryDeep: '#0F766E',
+        secondary: '#E11D48', 
+        secondaryLight: '#F43F5E',
+        secondaryDeep: '#BE123C',
+        gradientPrimary: '#F0FDFA',
+        gradientSecondary: '#FFF1F2',
+        accent: {
+          DEFAULT: '#7E30E1',
+          hover: '#49108B'
+        }
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

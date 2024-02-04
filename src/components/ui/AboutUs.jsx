@@ -1,16 +1,23 @@
+'use client';
 import Image from 'next/image';
 import bannerImg from "@/assets/banner3.webp";
 import { IoAddCircleOutline } from "react-icons/io5";
 import { IoRemoveCircleOutline } from "react-icons/io5";
-
+import { fadeIn } from "/variants";
+import { motion, easeInOut, easeIn } from "framer-motion";
 const AboutUs = () => {
     return (
         <div>
             <section className="relative dark:bg-slate-950">
                 <div className="inset-0 to-transparent bg-gradient-to-r"></div>
                 <div className="mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
-                    <div className="z-10 w-1/2 text-left ltr:sm:text-left rtl:sm:text-right">
-                        <h1 className="text-3xl font-extrabold md:text-5xl dark:text-rose-500"> Know More About Us </h1>
+                    <motion.div
+                    variants={fadeIn('right',0.2)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    viewport={{once: false, amount: 0.4}}
+                     className="z-10 w-1/2 text-left ltr:sm:text-left rtl:sm:text-right">
+                        <h1 className="text-3xl font-extrabold md:text-5xl dark:text-secondary"> Know More About Us </h1>
 
                         <div className="mt-8">
                             <div className="flow-root">
@@ -19,8 +26,8 @@ const AboutUs = () => {
                                         <summary className="flex cursor-pointer items-center justify-between text-gray-900 dark:text-gray-300">
                                             <h2 className="text-lg font-medium"> What Is The Best Age To Start Kindergarten? </h2>
                                             <span className="relative h-5 w-5 shrink-0 pb-6">
-                                            <IoAddCircleOutline className="absolute inset-0 text-2xl text-teal-500 opacity-100 group-open:opacity-0"/>
-                                            <IoRemoveCircleOutline className="absolute inset-0 text-2xl text-teal-500 opacity-0 group-open:opacity-100"/>
+                                            <IoAddCircleOutline className="absolute inset-0 text-2xl text-primary opacity-100 group-open:opacity-0"/>
+                                            <IoRemoveCircleOutline className="absolute inset-0 text-2xl text-primary opacity-0 group-open:opacity-100"/>
                                             </span>
                                         </summary>
 
@@ -34,8 +41,8 @@ const AboutUs = () => {
                                             <h2 className="text-lg font-medium"> Which Is The Best Preschool For Your Child ?</h2>
 
                                             <span className="relative h-5 w-5 shrink-0 pb-6">
-                                            <IoAddCircleOutline className="absolute inset-0 text-2xl text-teal-500 opacity-100 group-open:opacity-0"/>
-                                            <IoRemoveCircleOutline className="absolute inset-0 text-2xl text-teal-500 opacity-0 group-open:opacity-100"/>
+                                            <IoAddCircleOutline className="absolute inset-0 text-2xl text-primary opacity-100 group-open:opacity-0"/>
+                                            <IoRemoveCircleOutline className="absolute inset-0 text-2xl text-primary opacity-0 group-open:opacity-100"/>
                                             </span>
                                         </summary>
 
@@ -48,8 +55,8 @@ const AboutUs = () => {
                                             <h2 className="text-lg font-medium"> What Is The Toution Fee On First Year? </h2>
 
                                             <span className="relative h-5 w-5 shrink-0 pb-6">
-                                            <IoAddCircleOutline className="absolute inset-0 text-2xl text-teal-500 opacity-100 group-open:opacity-0"/>
-                                            <IoRemoveCircleOutline className="absolute inset-0 text-2xl text-teal-500 opacity-0 group-open:opacity-100"/>
+                                            <IoAddCircleOutline className="absolute inset-0 text-2xl text-primary opacity-100 group-open:opacity-0"/>
+                                            <IoRemoveCircleOutline className="absolute inset-0 text-2xl text-primary opacity-0 group-open:opacity-100"/>
                                             </span>
                                         </summary>
 
@@ -61,13 +68,18 @@ const AboutUs = () => {
                             </div>
 
                         </div>
-                    </div>
+                    </motion.div>
 
-                    <div className="w-1/2 flex mx-auto relative">
+                    <motion.div
+                    variants={fadeIn('left',0.2)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    viewport={{once: false, amount: 0.4}}
+                     className="w-1/2 flex mx-auto relative">
                         <div className="mask mask-squircle" style={{ backgroundImage: `url('https://i.ibb.co/9nRKZzC/hero-3-mask-8934d809.png')` }}>
                             <Image src={bannerImg} alt="Banner Photo" />
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </section>
         </div>

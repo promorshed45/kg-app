@@ -8,7 +8,7 @@ const ThemeToggler = () => {
     return (
         <div>
             <button
-                className='flex bg-gray-200 text-teal-500 px-2 py-2 rounded-full'
+                className='flex bg-gray-200 text-primary px-2 py-2 rounded-full'
                 onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
             >
                 {theme === 'dark' ? <LuSun className='text-2xl' /> : <LuMoon className='text-2xl' />}

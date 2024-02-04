@@ -8,7 +8,7 @@ const NavBar = () => {
         <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <div class="flex h-16 items-center justify-between">
             <div class="md:flex md:items-center md:gap-12">
-              <a class="block text-teal-500" href="/">
+              <a class="block text-primary" href="/">
                 <span class="sr-only">Home</span>
                 <svg class="h-8" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -22,23 +22,23 @@ const NavBar = () => {
             <div class="hidden md:block">
               <nav aria-label="Global">
                 <ul class="flex items-center gap-6 text-lg">
-                  <li> <a class="text-slate-950 dark:text-gray-300 transition hover:text-rose-400" href="/"> Home </a>  </li>
-                  <li> <a class="text-slate-950 dark:text-gray-300 transition hover:text-rose-400" href="/"> About </a>  </li>
-                  <li> <a class="text-slate-950 dark:text-gray-300 transition hover:text-rose-400" href="/"> Programs </a>  </li>
-                  <li> <a class="text-slate-950 dark:text-gray-300 transition hover:text-rose-400" href="/"> Notice </a>  </li>
-                  <li> <a class="text-slate-950 dark:text-gray-300 transition hover:text-rose-400" href="/"> News </a>  </li>
-                  <li> <a class="text-slate-950 dark:text-gray-300 transition hover:text-rose-400" href="/"> Store </a>  </li>
-                  <li> <a class="text-slate-950 dark:text-gray-300 transition hover:text-rose-400" href="/"> Contact </a>  </li>               
+                  <li> <a class="text-slate-950 dark:text-gray-300 transition hover:text-secondaryLight" href="/"> Home </a>  </li>
+                  <li> <a class="text-slate-950 dark:text-gray-300 transition hover:text-secondaryLight" href="/"> About </a>  </li>
+                  <li> <a class="text-slate-950 dark:text-gray-300 transition hover:text-secondaryLight" href="/"> Programs </a>  </li>
+                  <li> <a class="text-slate-950 dark:text-gray-300 transition hover:text-secondaryLight" href="/"> Notice </a>  </li>
+                  <li> <a class="text-slate-950 dark:text-gray-300 transition hover:text-secondaryLight" href="/"> News </a>  </li>
+                  <li> <a class="text-slate-950 dark:text-gray-300 transition hover:text-secondaryLight" href="/"> Store </a>  </li>
+                  <li> <a class="text-slate-950 dark:text-gray-300 transition hover:text-secondaryLight" href="/"> Contact </a>  </li>               
                 </ul>
               </nav>
             </div>
 
             <div class="flex items-center gap-4">
               <div class="sm:flex sm:gap-4">
-                <a class="rounded-md bg-teal-500 px-5 py-2.5 text-sm font-medium text-white shadow"  href="/" > Login </a>
+                <a class="rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-white shadow"  href="/" > Login </a>
 
                 <div class="hidden sm:flex">
-                  <a  class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-500" href="/">  Register </a>
+                  <a  class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-primary" href="/">  Register </a>
                 </div>
               </div>
               <ThemeToggler/>
