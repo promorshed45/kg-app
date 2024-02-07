@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import bannerImg from "@/assets/banner3.webp";
+import school from "@/assets/school.png";
 import { IoAddCircleOutline } from "react-icons/io5";
 import { IoRemoveCircleOutline } from "react-icons/io5";
 import { fadeIn } from "/variants";
@@ -10,14 +10,14 @@ const AboutUs = () => {
         <div>
             <section className="relative dark:bg-slate-950">
                 <div className="inset-0 to-transparent bg-gradient-to-r"></div>
-                <div className="mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
+                <div className="mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8 gap-10">
                     <motion.div
                     variants={fadeIn('right',0.2)}
                     initial='hidden'
                     whileInView={'show'}
-                    viewport={{once: false, amount: 0.4}}
+                    viewport={{once: true, amount: 0.4}}
                      className="z-10 w-1/2 text-left ltr:sm:text-left rtl:sm:text-right">
-                        <h1 className="text-3xl font-extrabold md:text-5xl dark:text-secondary"> Know More About Us </h1>
+                        <h1 className="text-3xl font-extrabold md:text-5xl dark:text-secondary"> Know More About School </h1>
 
                         <div className="mt-8">
                             <div className="flow-root">
@@ -74,10 +74,10 @@ const AboutUs = () => {
                     variants={fadeIn('left',0.2)}
                     initial='hidden'
                     whileInView={'show'}
-                    viewport={{once: false, amount: 0.4}}
+                    viewport={{once: true, amount: 0.4}}
                      className="w-1/2 flex mx-auto relative">
-                        <div className="mask mask-squircle" style={{ backgroundImage: `url('https://i.ibb.co/9nRKZzC/hero-3-mask-8934d809.png')` }}>
-                            <Image src={bannerImg} alt="Banner Photo" />
+                        <div className="mask mask-squircle">
+                            <Image src={school} alt="Banner Photo" />
                         </div>
                     </motion.div>
                 </div>

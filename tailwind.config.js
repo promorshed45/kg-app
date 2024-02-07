@@ -7,13 +7,13 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-   
+
     extend: {
       colors: {
         primary: '#14B8A6',
         primaryLight: '#2DD4BF',
         primaryDeep: '#0F766E',
-        secondary: '#E11D48', 
+        secondary: '#E11D48',
         secondaryLight: '#F43F5E',
         secondaryDeep: '#BE123C',
         gradientPrimary: '#F0FDFA',

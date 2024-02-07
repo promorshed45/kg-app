@@ -1,11 +1,11 @@
 import { Fredoka, Inter } from "next/font/google";
 import "./globals.css";
-import NavBar from "@/components/shared/NavBar";
-import Footer from "@/components/shared/Footer";
 import Provider from "./Provider";
+import NavBar from "@/components/frontend/shared/NavBar";
+import Footer from "@/components/frontend/shared/Footer";
 
 // const inter = Inter({ subsets: ["latin"] });
-const fredoka = Fredoka({ subsets: ["latin", "hebrew","latin-ext"] })
+const fredoka = Fredoka({ subsets: ["latin", "hebrew","latin-ext"], weight: ['300', '400','600','700']});
 
 export const metadata = {
   title: "Modern Kindergarten Application",
@@ -17,9 +17,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={fredoka.className}>
         <Provider>
-          <NavBar/>
+          {/* <NavBar/> */}
           {children}
-          <Footer/>
+          {/* <Footer/> */}
         </Provider>
       </body>
     </html>

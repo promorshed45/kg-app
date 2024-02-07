@@ -1,46 +1,57 @@
 'use client';
-import Image from 'next/image';
-import React from 'react';
-import program1 from '@/assets/program-1.webp'
-import program2 from '@/assets/program-2.webp'
-import program3 from '@/assets/program-3.webp'
-import Link from 'next/link';
+import { CiMusicNote1, CiTrophy } from "react-icons/ci";
+import { MdOutlineDraw } from "react-icons/md";
+import { BsSunrise } from "react-icons/bs";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import { } from 'swiper';
+import 'swiper/css/pagination';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { fadeIn } from "/variants";
-import { motion, easeInOut, easeIn } from "framer-motion";
+import { motion } from "framer-motion";
+import Link from "next/link";
+import Image from "next/image";
 
-const Program = () => {
+const Slider = () => {
+    const icons = {
+        "music": <CiMusicNote1 />,
+        "spots": <CiTrophy />,
+        "drawing": <MdOutlineDraw />,
+        "daycare": <BsSunrise />
+
+    };
+
     return (
-        <div>
-            <section class="text-gray-700 body-font bg-gradient-to-r from-gradientSecondary  to-gradientPrimary">
-                <div class="container px-24 py-24 mx-auto">
-                    <motion.div
-                        variants={fadeIn('down', 0.1)}
-                        initial='hidden'
-                        whileInView={'show'}
-                        viewport={{ once: false, amount: 0.1 }}
-                        class="flex flex-col text-center w-full mb-10">
-                        <h1 class="md:text-5xl text-2xl font-semibold title-font mb-4 text-primaryLight"> Our Programs </h1>
-                        <p class="lg:w-2/3 mx-auto leading-relaxed text-lg"> Kindedo opened its doors in 1984 with a unique vision to provide its students
-                            with a globally focused study of arts. </p>
-                    </motion.div>
+        <>
+            <Swiper
+                slidesPerView={3}
+                spaceBetween={40}
+                pagination={{
+                    clickable: true,
 
-
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
-
-                        {Programs.map((data, index) => (
-                            <motion.div key={index}
-                            variants={fadeIn('up', 0.4)}
+                }}
+                autoplay={{
+                    delay: 3500,
+                    disableOnInteraction: false,
+                }}
+                modules={[Pagination, Autoplay]}
+                className="mySwiper h-[670px]"
+            >
+                {Programs.map((data, index) => (
+                    <SwiperSlide key={index}>
+                        <motion.div
+                            variants={fadeIn('left', 0.2)}
                             initial='hidden'
                             whileInView={'show'}
                             viewport={{ once: false, amount: 0.1 }}>
                             <Link href="#" className="group relative block overflow-hidden rounded-xl">
                                 <Image
                                     src={data.photo} width={750} height={700} alt="Student Photo"
-                                    className="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72" />
+                                    className="h-52 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-60" />
                                 <div className="relative border border-gray-100 bg-white p-4">
                                     <div className="text-left ltr:sm:text-left rtl:sm:text-right">
                                         <h1 className="text-3xl font-semibold md:text-3xl"> {data.title} </h1>
-                                        <p className="mt-2 md:text-lg/relaxed"> {data.description} </p>
+                                        <p className="mt-2 md:text-lg/relaxed h-20"> {data.description} </p>
                                         <div>
                                             <div style={{ backgroundColor: data.info.bgColor }} className="mx-auto rounded-xl md:my-3">
                                                 <div className="grid grid-cols-1 sm:grid-cols-3 py-3 divide-dashed sm:divide-x sm:divide-gray-100 text-white">
@@ -71,20 +82,14 @@ const Program = () => {
                                 </div>
                             </Link>
                         </motion.div>
-                        ))}
-                        
-
-
-
-                        
-                    </div>
-                </div>
-            </section>
-        </div>
+                    </SwiperSlide>
+                ))}
+            </Swiper>
+        </>
     );
 };
 
-export default Program;
+export default Slider;
 
 const Programs = [
     {
@@ -120,48 +125,48 @@ const Programs = [
             "bgColor": "#FA7070"
         }
     },
-    // {
-    //     "title": "KG Two",
-    //     "description": "Developing literacy and numeracy skills. Encouraging critical thinking and problem-solving.",
-    //     "photo": "/programs/kg2.jpg",
-    //     "info": {
-    //         "age": "5-6",
-    //         "week": "5",
-    //         "period": "Morning",
-    //         "bgColor": "#BC7AF9"
-    //     }
-    // },
-    // {
-    //     "title": "KG Three",
-    //     "description": "Advancing academic skills with hands-on learning. Preparing for elementary school.",
-    //     "photo": "/programs/kg3.jpg",
-    //     "info": {
-    //         "age": "6-7",
-    //         "week": "5",
-    //         "period": "Morning",
-    //         "bgColor": "#FF6464"
-    //     }
-    // },
-    // {
-    //     "title": "KG Four",
-    //     "description": "Enhancing comprehension and communication. Building confidence for future learning.",
-    //     "photo": "/programs/kg4.jpg",
-    //     "info": {
-    //         "age": "7-8",
-    //         "week": "5",
-    //         "period": "Morning",
-    //         "bgColor": "#9400D3"
-    //     }
-    // },
-    // {
-    //     "title": "KG Five",
-    //     "description": "Final preparation for primary education. Strengthening academic foundations.",
-    //     "photo": "/programs/kg5.jpg",
-    //     "info": {
-    //         "age": "8-9",
-    //         "week": "5",
-    //         "period": "Morning",
-    //         "bgColor": "#54B435"
-    //     }
-    // }
+    {
+        "title": "KG Two",
+        "description": "Developing literacy and numeracy skills. Encouraging critical thinking and problem-solving.",
+        "photo": "/programs/kg2.jpg",
+        "info": {
+            "age": "5-6",
+            "week": "5",
+            "period": "Morning",
+            "bgColor": "#BC7AF9"
+        }
+    },
+    {
+        "title": "KG Three",
+        "description": "Advancing academic skills with hands-on learning. Preparing for elementary school.",
+        "photo": "/programs/kg3.jpg",
+        "info": {
+            "age": "6-7",
+            "week": "5",
+            "period": "Morning",
+            "bgColor": "#FF6464"
+        }
+    },
+    {
+        "title": "KG Four",
+        "description": "Enhancing comprehension and communication. Building confidence for future learning.",
+        "photo": "/programs/kg4.jpg",
+        "info": {
+            "age": "7-8",
+            "week": "5",
+            "period": "Morning",
+            "bgColor": "#9400D3"
+        }
+    },
+    {
+        "title": "KG Five",
+        "description": "Final preparation for primary education. Strengthening academic foundations.",
+        "photo": "/programs/kg5.jpg",
+        "info": {
+            "age": "8-9",
+            "week": "5",
+            "period": "Morning",
+            "bgColor": "#54B435"
+        }
+    }
 ]

@@ -15,7 +15,7 @@ body {
   .swiper-pagination-bullet {
     width: 8px; /* Bullet width */
     height: 8px; /* Bullet height */
-    background-color: #ddd; /* Bullet color */
+    background-color: #d60b0b; /* Bullet color */
     border-radius: 50%; /* Make bullet round */
     margin: 0 4px; /* Spacing between bullets */
   }

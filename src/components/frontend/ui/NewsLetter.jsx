@@ -5,7 +5,7 @@ import { BsEnvelopeAt } from "react-icons/bs";
 
 const NewsLetter = () => {
     return (
-        <div>
+        <div className=''>
             <div className="relative overflow-hidden">
                 <div className='w-full h-full'>
                     <Image src={letter} alt='background image' className='absolute -z-10 w-full object-cover opacity-80' />
@@ -21,19 +21,17 @@ const NewsLetter = () => {
                             <form action="#" className="flex">
                                 <div className="sm:flex-1">
                                     <label htmlFor="email" className="sr-only">Email</label>
-
                                     <input
                                         type="email"
                                         placeholder="Email address"
-                                        className="w-full rounded-l-md border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none focus:ring focus:ring-yellow-400"
-                                    />
+                                        className="w-full rounded-l-md border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none focus:ring focus:ring-yellow-400" />
                                 </div>
 
                                 <button
                                     type="submit"
                                     className="group mt-4 flex w-full items-center justify-center gap-2 rounded-r-md bg-secondaryDeep px-5 py-3 text-white transition focus:outline-none focus:ring focus:ring-yellow-400 sm:mt-0 sm:w-auto">
                                     <span className="text-sm font-medium"> Subscribe Now </span>
-                                    <BsEnvelopeAt  className="text-xl" />
+                                    <BsEnvelopeAt className="text-xl" />
                                 </button>
                             </form>
                         </div>
