@@ -18,24 +18,25 @@ const StudentsInformation = () => {
   }
     return (
         <>
-            <div className="relative overflow-x-auto shadow-md sm:rounded-lg bg-slate-900">
-                <table className="w-full text-sm text-left font-sans text-gray-200 dark:text-gray-400">
-                    <thead className="text-md text-green-500 font-sans dark:bg-gray-700 dark:text-gray-400">
+            <div className="relative overflow-x-auto shadow-md sm:rounded-lg bg-slate-200 dark:bg-slate-900">
+                <table className="w-full text-sm text-left font-sans text-gray-700 dark:text-gray-400">
+                    <thead className="text-md text-green-500 font-sans bg-gray-200 dark:bg-gray-700 dark:text-gray-400">
                         <tr>
-                            {/* <th scope="col" className="p-4"> <div className="flex items-center">
-                                <input id="checkbox-all-search" type="checkbox" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-                                <label for="checkbox-all-search" className="sr-only">checkbox</label>
-                            </div>
+                            {/* <th scope="col" className="p-4"> 
+                              <div className="flex items-center">
+                                  <input id="checkbox-all-search" type="checkbox" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+                                  <label for="checkbox-all-search" className="sr-only">checkbox</label>
+                              </div>
                             </th> */}
-                            <th scope="col" className="pl-6 py-3"> Student Id </th>
-                            <th scope="col" className="mx-3 px-3 py-3"> Student Name, Father Name, Mother Name </th>
+                            <th scope="col" className="pl-6 py-3"> Student <br /> Id </th>
+                            <th scope="col" className="mx-3 px-3 py-3"> Name of Student, <br /> Father, Mother </th>
                             <th scope="col" className=" py-3"> Mobile No.  </th>
-                            <th scope="col" className="py-3"> Department/ Class </th>
-                            <th scope="col" className="pr-3 py-3"> Section </th>
-                            <th scope="col" className="px-2 py-3"> Blood Group </th>
-                            <th scope="col" className="pr-4 py-3"> Gendar </th>
+                            <th scope="col" className="py-3"> Class/ <br /> Department </th>
+                            <th scope="col" className="px-3 py-3"> Section </th>
+                            <th scope="col" className="py-3"> Blood <br /> Group </th>
+                            <th scope="col" className="pl-3 py-3"> Gendar </th>
                             <th scope="col" className="px-3 py-3"> ID Card </th>
-                            <th scope="col" className="pl-3 py-3"> Birth Certificate </th>
+                            <th scope="col" className="py-3"> Photo </th>
                             <th scope="col" className="pl-5 py-3">Action</th>
 
                         </tr>
@@ -43,38 +44,38 @@ const StudentsInformation = () => {
 
                     {currentlyDisplayData.map((item, i)=> (
                     <tbody key={i}>
-                        <tr className="border-t bg-slate-900 border-gray-700 hover:bg-slate-950 hover:shadow-md dark:hover:bg-gray-600">
-                            {/* <td className="w-4 p-4">
+                        <tr className="border-t-2  dark:bg-slate-900 border-gray-300 dark:border-gray-700 hover:bg-rose-50 hover:shadow-md dark:hover:bg-gray-600">
+                            {/* <td className="w-4 pl-4 bg-rose-500">
                                 <div className="flex items-center">
                                     <input id="checkbox-table-search-1" type="checkbox" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
                                     <label for="checkbox-table-search-1" className="sr-only">checkbox</label>
                                 </div>
                             </td> */}
                             <td className="pl-6 py-4">   {item.id}  </td>
-                            <th scope="row" className="flex items-center px-3 py-2 whitespace-nowrap dark:text-white">
-                                <Image className="w-14 h-14 rounded-full" src={avatar} alt="Jese image" />
-                                <div className="ps-3">
+                            <th scope="row" className="flex items-center px-3 py-2 whitespace-nowrap  dark:text-white">
+                                {/* <Image className="w-14 h-14 rounded-full" src={avatar} alt="Jese image" /> */}
+                                <div className="">
                                     <div className="text-base font-medium"> {item.name} </div>
-                                    <div className="font-normal text-gray-400"> {item.fatherName} </div>
-                                    <div className="font-normal text-gray-400"> {item.motherName} </div>
+                                    <div className="font-normal dark:text-gray-400"> {item.fatherName} </div>
+                                    <div className="font-normal dark:text-gray-400"> {item.motherName} </div>
                                 </div>
                             </th>
                             <td className="pr-5 py-4">   {item.mobile}  </td>
                             <td className="pl-3 py-4">   {item.class}  </td>
-                            <td className="pl-3 py-4">   {item.section}  </td>
-                            <td className="pl-3 py-4">   {item.bloodGroup}  </td>
-                            <td className="pr-3 py-4">   {item.gender}  </td>
-                            <td className="pl-3 py-4">    {item.idCard}  </td>
+                            <td className="px-3 py-4">   {item.section}  </td>
+                            <td className="py-4">   {item.bloodGroup}  </td>
+                            <td className="pl-3 py-4">   {item.gender}  </td>
+                            <td className="px-3 py-4">    {item.idCard}  </td>
                             
-                            <th scope="row" className="flex items-center pl-3 py-2 text-gray-900 whitespace-nowrap dark:text-white">
+                            <th scope="row" className=" items-center py-2 text-gray-900 whitespace-nowrap dark:text-white">
                                 <Image className="w-14 h-14 rounded-md" src={avatar} alt="Jese image" />
                             </th>
-                            <td className="pr-3">
+                            <td className="px-3">
                                 <div className='flex gap-2'>
-                                    <button className="font-medium text-gray-100 px-2 py-2 rounded-md bg-blue-600 dark:text-blue-500 hover:underline"> <LuPencilRuler /> </button>
-                                    <button className="font-medium text-gray-100 px-2 py-2 rounded-md bg-rose-600 dark:text-rose-500 hover:underline">  <LuTrash2 /> </button>
-                                    <button className="font-medium text-gray-100 px-2 py-2 rounded-md bg-green-600 dark:text-green-500 hover:underline"> <LuView/> </button>  
-                                    <button className="font-medium text-gray-100 px-2 py-2 rounded-md bg-fuchsia-500 dark:text-green-500 hover:underline"> <LuPrinter/> </button>  
+                                    <button className="font-medium text-gray-100  px-2 py-2 rounded-md bg-blue-600 hover:underline"> <LuPencilRuler /> </button>
+                                    <button className="font-medium text-gray-100  px-2 py-2 rounded-md bg-rose-600 hover:underline">  <LuTrash2 /> </button>
+                                    <button className="font-medium text-gray-100  px-2 py-2 rounded-md bg-green-600 hover:underline"> <LuView/> </button>  
+                                    <button className="font-medium text-gray-100  px-2 py-2 rounded-md bg-fuchsia-500 hover:underline"> <LuPrinter/> </button>  
                                 </div>                              
                             </td>
                         </tr>
@@ -159,7 +160,7 @@ const studentsInfo = [
     {
       "id": "003",
       "photo": "/studentsPhoto/003.jpg",
-      "name": "Robert Johnson",
+      "name": "Robert Johnson Farnandu  ",
       "fatherName": "James Johnson",
       "motherName": "Sarah Johnson",
       "class": "11",
@@ -201,7 +202,7 @@ const studentsInfo = [
     {
       "id": "006",
       "photo": "/studentsPhoto/006.jpg",
-      "name": "Olivia Davis",
+      "name": "Md. Ashraful Islam Arafat",
       "fatherName": "Joseph Davis",
       "motherName": "Charlotte Davis",
       "class": "10",

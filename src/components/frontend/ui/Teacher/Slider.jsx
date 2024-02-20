@@ -69,7 +69,7 @@ const Slider = () => {
                                 {hoverIndex === index && (
                                     <>
                                         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-slate-950/70 opacity-100 rounded-lg"></div>
-                                        <div className="absolute w-full bottom-0 h-10 animate-pulse flex items-center rounded-b-lg bg-rose-500 justify-center group-hover:opacity-100">
+                                        <div className="absolute w-full bottom-0 h-10 animate-pulse flex items-center rounded-b-lg bg-secondary justify-center group-hover:opacity-100">
                                         </div>
                                         <div className='absolute bottom-2 w-full flex justify-center'>
                                             <ul className="flex gap-6">

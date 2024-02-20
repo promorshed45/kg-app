@@ -75,7 +75,7 @@ const Slider = () => {
                                     </div>
                                     <form className="mt-4">
                                         <button
-                                            className="w-full rounded bg-primaryLight p-3 text-md font-medium transition hover:animate-pulse">
+                                            className="w-full rounded bg-primary p-3 text-md font-medium transition hover:animate-pulse text-white">
                                             View More
                                         </button>
                                     </form>

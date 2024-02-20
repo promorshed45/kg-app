@@ -11,12 +11,12 @@ const News = () => {
             <section className="px-20 mx-auto bg-gray-50 dark:bg-slate-950">
                 <div className="mx-auto max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24">
                     <div className="max-w-7xl items-end justify-between sm:flex sm:pe-6 lg:pe-8">
-                        <h1 class="md:text-5xl text-2xl font-semibold title-font mb-4 dark:text-gray-300"> Campus News </h1>
+                        <h1 class="md:text-5xl text-2xl font-semibold title-font mb-4 text-primary"> Campus News </h1>
                         <div className="mt-8 flex gap-4 lg:mt-0">
                             <button
                                 aria-label="Previous slide"
                                 id="keen-slider-previous"
-                                className="rounded-full border border-secondaryDeep p-3 text-secondaryDeep transition hover:bg-secondaryDeep hover:text-white"
+                                className="rounded-full border border-secondary-foreground p-3 text-secondary-foreground transition hover:bg-secondary-foreground hover:text-white"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +33,7 @@ const News = () => {
                             <button
                                 aria-label="Next slide"
                                 id="keen-slider-next"
-                                className="rounded-full border border-secondaryDeep p-3 text-secondaryDeep transition hover:bg-secondaryDeep hover:text-white"
+                                className="rounded-full border border-secondary-foreground p-3 text-secondary-foreground transition hover:bg-secondary-foreground hover:text-white"
                             >
                                 <svg
                                     className="h-5 w-5 rtl:rotate-180"

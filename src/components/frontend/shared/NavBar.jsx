@@ -1,5 +1,6 @@
 import React from 'react';
 import ThemeToggler from '../ui/ThemeToggler';
+import Link from 'next/link';
 
 const NavBar = () => {
   return (
@@ -22,20 +23,20 @@ const NavBar = () => {
             <div class="hidden md:block">
               <nav aria-label="Global">
                 <ul class="flex items-center gap-6 text-lg">
-                  <li> <a class="text-slate-950 dark:text-gray-300 transition hover:text-secondaryLight" href="/"> Home </a>  </li>
-                  <li> <a class="text-slate-950 dark:text-gray-300 transition hover:text-secondaryLight" href="/"> About </a>  </li>
-                  <li> <a class="text-slate-950 dark:text-gray-300 transition hover:text-secondaryLight" href="/"> Programs </a>  </li>
-                  <li> <a class="text-slate-950 dark:text-gray-300 transition hover:text-secondaryLight" href="/"> Notice </a>  </li>
-                  <li> <a class="text-slate-950 dark:text-gray-300 transition hover:text-secondaryLight" href="/"> News </a>  </li>
-                  <li> <a class="text-slate-950 dark:text-gray-300 transition hover:text-secondaryLight" href="/"> Store </a>  </li>
-                  <li> <a class="text-slate-950 dark:text-gray-300 transition hover:text-secondaryLight" href="/"> Contact </a>  </li>               
+                  <li> <a class="text-slate-950 dark:text-gray-300 transition hover:text-secondary" href="/"> Home </a>  </li>
+                  <li> <a class="text-slate-950 dark:text-gray-300 transition hover:text-secondary" href="/"> About </a>  </li>
+                  <li> <a class="text-slate-950 dark:text-gray-300 transition hover:text-secondary" href="/"> Programs </a>  </li>
+                  <li> <a class="text-slate-950 dark:text-gray-300 transition hover:text-secondary" href="/"> Notice </a>  </li>
+                  <li> <a class="text-slate-950 dark:text-gray-300 transition hover:text-secondary" href="/"> News </a>  </li>
+                  <li> <a class="text-slate-950 dark:text-gray-300 transition hover:text-secondary" href="/"> Store </a>  </li>
+                  <li> <a class="text-slate-950 dark:text-gray-300 transition hover:text-secondary" href="/"> Contact </a>  </li>               
                 </ul>
               </nav>
             </div>
 
             <div class="flex items-center gap-4">
               <div class="sm:flex sm:gap-4">
-                <a class="rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-white shadow"  href="/" > Login </a>
+                <Link class="rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-white shadow"  href="/login" > Login </Link>
 
                 <div class="hidden sm:flex">
                   <a  class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-primary" href="/">  Register </a>

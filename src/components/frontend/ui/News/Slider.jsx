@@ -44,7 +44,7 @@ const Slider = () => {
                         >
                             <Link key={index} href="#" className="group relative block overflow-hidden">
                                 <div className='relative '>
-                                    <button className="absolute left-6 bottom-4 z-10 rounded-sm bg-yellow-500 p-1.5 text-white transition hover:text-secondaryDeep">
+                                    <button className="absolute left-6 bottom-4 z-10 rounded-sm bg-yellow-500 p-1.5 text-white transition hover:text-secondary-foreground">
                                         <span className="sr-only">Wishlist</span>
                                         <p> 24 Jan 2024</p>
                                     </button>

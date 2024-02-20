@@ -24,11 +24,11 @@ const Slider = () => {
      modules={[Autoplay, Pagination, Navigation]}
         slidesPerView={1}
         Navigation={true} 
-        className="h-[450px] xl:h-[400px]"
+        className="h-[500px] xl:h-[400px]"
       >
         {testimonials.map((data, index) => (
           <SwiperSlide key={index}>
-            <div className="flex flex-col sm mx-4 my-6 bg-white/30 rounded-xl shadow-lg">
+            <div className="flex flex-col 4 h-fit bg-white/30 rounded-xl shadow-lg">
               <div className="px-8 py-12 rounded-t-lg">
                 <p className="relative py-1 text-lg italic text-center dark:text-slate-950">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" className="w-8 h-8 text-rose-100">

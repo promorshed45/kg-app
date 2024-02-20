@@ -1,7 +1,6 @@
 import React from 'react';
 import { FaUserGraduate, FaUsers } from 'react-icons/fa';
 import { FaUserGear, FaUserGroup } from 'react-icons/fa6';
-import { LuUser2 } from 'react-icons/lu';
 
 const StateOne = () => {
     const icons = {
@@ -14,7 +13,7 @@ const StateOne = () => {
     return (
         <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 pt-10'>
             {info.map((item, index)=>(
-                <div key={index} className={`text-gray-100 rounded-lg  ${item.color} flex flex-col p-6 gap-2 items-center justify-center`}>
+                <div key={index} className={`text-gray-50 rounded-lg ${item.color} flex flex-col p-6 gap-2 items-center justify-center`}>
                 <span className='text-4xl '>{icons[item.icon]}</span>
                 <h1 className='text-2xl font-medium'> {item.title} </h1>
                 <h1 className='text-2xl'> {item.count} </h1>

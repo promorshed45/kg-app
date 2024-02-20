@@ -1,7 +1,3 @@
-
-
-
-
 'use client';
 import Image from "next/image";
 import bannershape from "@/assets/banner-shape.webp";
@@ -21,14 +17,13 @@ const Banner = () => {
                             initial='hidden'
                             whileInView={'show'}
                             viewport={{ once: true, amount: 0.6 }}
-
-                            className="bg-gradient-to-r from-secondary via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-7xl">Best Children’s <strong className="block font-extrabold text-primary">Education</strong></motion.h1>
+                            className="bg-gradient-to-r from-primary via-orange-500  bg-clip-text text-3xl font-extrabold text-transparent sm:text-7xl">Best Children’s <strong className="block font-extrabold text-secondary">Education</strong></motion.h1>
                         <motion.p
                             variants={fadeIn('down', 0.6)}
                             initial='hidden'
                             whileInView={'show'}
                             viewport={{ once: false, amount: 0.8 }}
-                            className="mt-4 max-w-lg sm:text-xl/relaxed text-gray-100 dark:text-slate-950">
+                            className="mt-4 max-w-lg sm:text-xl/relaxed text-gray-100">
                             "Enriching young minds through dynamic, personalized learning, fostering curiosity, creativity, and a lifelong love for education, ensuring holistic development."
                         </motion.p>
 
@@ -38,8 +33,8 @@ const Banner = () => {
                             whileInView={'show'}
                             viewport={{ once: true, amount: 0.8 }}
                             className="mt-8 flex flex-wrap gap-4 text-center">
-                            <a href="#" className="block w-full rounded bg-secondary px-12 py-3 text-sm font-medium text-white shadow hover:bg-secondaryDeep focus:outline-none focus:ring active:bg-secondary sm:w-auto">Admission Open 2024</a>
-                            <a href="#" className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-secondaryDeep shadow hover:text-secondaryDeep focus:outline-none focus:ring active:text-secondary sm:w-auto">Learn More</a>
+                            <a href="#" className="block w-full rounded bg-secondary hover:bg-secondary-foreground px-12 py-3 text-sm font-medium text-white shadow  sm:w-auto">Admission Open 2024</a>
+                            <a href="#" className="block w-full  rounded  px-12 py-3 text-sm font-medium text-white shadow shadow-slate-100 hover:shadow-none hover:bg-secondary-foreground  sm:w-auto">Learn More</a>
                         </motion.div>
                     </div>
 

@@ -30,7 +30,7 @@ export default function BackToTop() {
     <div>
       {isVisible && (
         <button
-          className={`fixed bg-secondary z-50 hover:bg-secondaryDeep w-12 h-12 right-5 bottom-5 rounded-full cursor-pointer flex justify-center items-center text-white border-2 border-white ${isVisible ? '' : 'hidden'}`}
+          className={`fixed bg-secondary z-50 hover:bg-secondary-foreground w-12 h-12 right-5 bottom-5 rounded-full cursor-pointer flex justify-center items-center text-white border-2 border-white ${isVisible ? '' : 'hidden'}`}
           onClick={scrollToTop} >
           <IoIosArrowUp className='text-xl' />
         </button>

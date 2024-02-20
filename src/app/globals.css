@@ -1,27 +1,97 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+ 
 
-/* global.css */
-/* Global styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 173 80.4% 40.0%;
+    --primary-foreground: 175 77.4% 26.1%; 
+    /* deep color for hover */
+    --secondary: 346.8 77.2% 49.8%;
+    --secondary-foreground: 345 82.7% 40.8%; 
+    /* deep color for hover */
+
+    --muted: 166 76.5% 96.7%; 
+    /* primary light color */
+    --muted-foreground: 356 100.0% 97.3%;
+    /* secondary light color */
+
+
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 346.8 77.2% 49.8%;
+    --radius: 0.5rem;
   }
-  
-  /* Custom styles for pagination bullets */
-  .swiper-pagination-bullet {
-    width: 8px; /* Bullet width */
-    height: 8px; /* Bullet height */
-    background-color: #d60b0b; /* Bullet color */
-    border-radius: 50%; /* Make bullet round */
-    margin: 0 4px; /* Spacing between bullets */
+
+  .dark {
+    --background: 224 71.4% 4.1%;
+    --foreground: 210 20% 98%;
+    --card: 224 71.4% 4.1%;
+    --card-foreground: 210 20% 98%;
+    --popover: 224 71.4% 4.1%;
+    --popover-foreground: 210 20% 98%;
+
+    --primary: 263.4 70% 50.4%;
+    --primary-foreground: 210 20% 98%;
+
+    --secondary: 346.8 77.2% 49.8%;
+    --secondary-foreground: 345 82.7% 40.8%; 
+    /* deep color for hover */
+
+    --muted: 166 76.5% 96.7%; 
+    /* primary light color */
+    --muted-foreground: 356 100.0% 97.3%;
+    /* secondary light color */
+
+    --accent: 215 27.9% 16.9%;
+    --accent-foreground: 210 20% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
+    --ring: 263.4 70% 50.4%;
   }
-  
-  /* Active bullet style */
-  .swiper-pagination-bullet-active {
-    background-color: #555; /* Active bullet color */
+}
+
+ 
+@layer base {
+  * {
+    @apply border-border;
   }
-  
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Adjust the width and cursor for the scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Set the background color of the scrollbar track */
+::-webkit-scrollbar-track {
+  background: #8a8888;
+}
+
+/* Customize the appearance of the scrollbar thumb and set cursor to pointer */
+::-webkit-scrollbar-thumb {
+  background: #f43f5e;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+

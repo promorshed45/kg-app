@@ -67,7 +67,7 @@ const StudentChart = () => {
     ]
     const [chartDataDisplay, setChartDataDisplay] = useState(tabs[0].type);
     return (
-        <div className='bg-slate-900 p-8 rounded-lg my-5 w-full'>
+        <div className='bg-white dark:bg-slate-900 p-8 rounded-lg my-5 w-full'>
             <h1 className='text-2xl mb-4 text-blue-500'> Students Information Chats </h1>
             <div className='p-4'>
                 <div>
@@ -87,7 +87,7 @@ const StudentChart = () => {
 
                                 {
                                 tabs.map((tab, i)=>(
-                                <button key={i} onClick={() => setChartDataDisplay(tab.type)}  href="#" className={chartDataDisplay==tab.type? "shrink-0 border-b-2 border-transparent px-1 pb-4 text-md font-medium text-secondaryLight border-secondaryLight" : "shrink-0 border-b-2 border-transparent px-1 pb-4 text-md font-medium text-gray-200 hover:border-secondaryLight hover:text-secondaryLight"}>
+                                <button key={i} onClick={() => setChartDataDisplay(tab.type)}  href="#" className={chartDataDisplay==tab.type? "shrink-0 border-b-2 border-transparent px-1 pb-4 text-md font-medium text-secondary border-secondary" : "shrink-0 border-b-2 border-transparent px-1 pb-4 text-md font-medium text-gray-200 hover:border-secondary hover:text-secondary"}>
                                     {tab.title}
                                 </button>
                                     )

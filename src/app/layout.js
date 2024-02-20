@@ -17,9 +17,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={fredoka.className}>
         <Provider>
-          {/* <NavBar/> */}
-          {children}
-          {/* <Footer/> */}
+          <NavBar/>
+          <main>{children}</main>
+          <Footer/>
         </Provider>
       </body>
     </html>

@@ -15,7 +15,7 @@ const Teacher = () => {
                     whileInView={'show'}
                     viewport={{once: true, amount: 0.4}}
                      class="flex flex-col text-center w-full mb-10">
-                        <h1 class="md:text-5xl text-2xl font-semibold title-font mb-4 "> Our Best Teachers </h1>
+                        <h1 class="md:text-5xl text-2xl font-semibold title-font mb-4 text-primary"> Our Best Teachers </h1>
                         <p class="lg:w-2/3 mx-auto leading-relaxed text-lg"> With the help of teachers and the environment as the third teacher, students
                             have opportunities to confidently take risks. </p>
                     </motion.div>

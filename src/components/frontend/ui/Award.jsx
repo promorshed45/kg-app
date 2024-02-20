@@ -61,22 +61,22 @@ const Award = () => {
                         <div className="text-left">
                             <div className="space-y-2 mt-8">
                                 <div className="flex gap-5 items-center">
-                                    <div> <IoIosArrowDropright className="text-xl text-primary hover:text-secondaryLight" /></div>
+                                    <div> <IoIosArrowDropright className="text-xl text-primary hover:text-secondary" /></div>
                                     <div> <p className="text-lg">  We believe every child is intelligent so we care. </p></div>
                                 </div>
                                 <div className="flex gap-5 items-center">
-                                    <div> <IoIosArrowDropright className="text-xl text-primary hover:text-secondaryLight" /></div>
+                                    <div> <IoIosArrowDropright className="text-xl text-primary hover:text-secondary" /></div>
                                     <div> <p className="text-lg">  Teachers make a difference of your child. </p></div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="mt-8 flex flex-wrap gap-4 text-center items-center">
-                            <button class="block w-full rounded-xl bg-primary px-12 py-3 text-sm font-medium text-white shadow hover:bg-primaryDeep focus:outline-none focus:ring active:bg-primary sm:w-auto"> Apply Now </button>
+                            <button class="block w-full rounded-xl bg-primary px-12 py-3 text-sm font-medium text-white shadow hover:bg-primary-foreground focus:outline-none focus:ring active:bg-primary sm:w-auto"> Apply Now </button>
                             <a target='_top' href="https://www.youtube.com/watch?v=NIk1-ck4c6Q">
                                 <div className='bg-rose-200 w-12 h-12 flex justify-center items-center rounded-full'>
-                                    <GoPlay className='text-secondaryDeep text-3xl absolute' />
-                                    <div className='border border-secondaryDeep  w-10 h-10 flex justify-center items-center rounded-full animate-ping'>
+                                    <GoPlay className='text-secondary-foreground text-3xl absolute' />
+                                    <div className='border border-secondary-foreground  w-10 h-10 flex justify-center items-center rounded-full animate-ping'>
                                     </div>
                                 </div>
                             </a>

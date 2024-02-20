@@ -1,25 +1,25 @@
+'use client';
 import NavBar from '@/components/backend/NavBar';
 import SideBar from '@/components/backend/SideBar';
-import { Inter } from 'next/font/google';
-import React from 'react';
-const inter = Inter({ subsets: ["latin"] });
+import { useState } from 'react';
 
-const layout = ({children}) => {
+const Layout = ({ children }) => {
+    const [showSidebar, setShowSidebar] = useState(false);
     return (
         <div className='flex'>
             {/* Side Bar */}
-            <SideBar/>
-            <div className='w-full'>
+            <SideBar showSidebar={showSidebar} setShowSidebar={setShowSidebar}/>
+            <div className='lg:ml-64 ml-0 flex-grow bg-slate-100 min-h-screen'>
                 {/* Header */}
-                <NavBar/>
+                <NavBar showSidebar={showSidebar} setShowSidebar={setShowSidebar}/>
                 {/* Main */}
-                <main className='ml-60 p-8 bg-slate-950 text-slate-50 min-h-screen mt-16'>
-                {children}
+                <main className='p-8 bg-slate-100 dark:bg-slate-950 dark:text-slate-50 min-h-screen mt-14 md:mt-16'>
+                    {children}
                 </main>
             </div>
-            {/* Main Body */}
         </div>
     );
 };
 
-export default layout;
+export default Layout;
+

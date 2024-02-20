@@ -18,7 +18,7 @@ const Footer = () => {
                         <Image src={footerbg} alt='background image' className='absolute -z-10 w-full object-cover opacity-50' />
                     </div>
                     <section class="z-0 text-gray-700 body-font h-[540px] relative">
-                        <div class="absolute inset-0 bg-gradient-to-r from-teal-100/80 to-rose-100/80"></div>
+                        <div class="absolute inset-0 bg-gradient-to-r from-muted/90 to-muted-foreground/90"></div>
                         <div class="absolute z-0  mx-auto text-white">
                             <footer className="">
                                 <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-10 sm:px-6 lg:px-8 lg:pt-20">
@@ -37,7 +37,7 @@ const Footer = () => {
                                                         href="/"
                                                         rel="noreferrer"
                                                         target="_blank"
-                                                        className="text-primary transition hover:text-secondaryLight">
+                                                        className="text-primary transition hover:text-secondary">
                                                         <span className="sr-only">Facebook</span>
                                                         <FaFacebook className="text-2xl" />
                                                     </a>
@@ -46,7 +46,7 @@ const Footer = () => {
                                                     <a href="/"
                                                         rel="noreferrer"
                                                         target="_blank"
-                                                        className="text-primary transition hover:text-secondaryLight">
+                                                        className="text-primary transition hover:text-secondary">
                                                         <span className="sr-only">Instagram</span>
                                                         <FaInstagram className="text-2xl" />
                                                     </a>
@@ -55,7 +55,7 @@ const Footer = () => {
                                                     <a href="/"
                                                         rel="noreferrer"
                                                         target="_blank"
-                                                        className="text-primary transition hover:text-secondaryLight">
+                                                        className="text-primary transition hover:text-secondary">
                                                         <span className="sr-only">Twitter</span>
                                                         <IoLogoTwitter className="text-2xl" />
                                                     </a>
@@ -65,7 +65,7 @@ const Footer = () => {
                                         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-2 lg:col-span-2">
                                             <div className="grid grid-cols-2">
                                                 <div className="text-center sm:text-left">
-                                                    <header className=" font-medium normal-case text-2xl text-secondaryDeep"> Quick links </header>
+                                                    <header className=" font-medium normal-case text-2xl text-secondary"> Quick links </header>
                                                     <ul className="mt-8 space-y-3 text-lg">
                                                         <li><a className="text-slate-950 transition hover:text-secondary" href="/"> About</a> </li>
                                                         <li><a className="text-slate-950 transition hover:text-secondary" href="/">  Programs </a> </li>
@@ -76,7 +76,7 @@ const Footer = () => {
                                                     </ul>
                                                 </div>
                                                 <div className="text-center sm:text-left text-slate-950">
-                                                    <header className=" font-medium normal-case text-2xl text-secondaryDeep"> Programs </header>
+                                                    <header className=" font-medium normal-case text-2xl text-secondary"> Programs </header>
                                                     <ul className="mt-8 space-y-3 text-lg">
                                                         <li><a className="text-slate-950 transition hover:text-secondary" href="/"> Play School </a> </li>
                                                         <li><a className="text-slate-950 transition hover:text-secondary" href="/">  Nursery </a> </li>
@@ -89,19 +89,19 @@ const Footer = () => {
                                             </div>
                                             <div>
                                                 <div>
-                                                    <header className=" font-medium normal-case text-2xl text-secondaryDeep text-center md:text-left"> Campus Address </header>
+                                                    <header className=" font-medium normal-case text-2xl text-secondary text-center md:text-left"> Campus Address </header>
                                                     <div className="text-left">
                                                         <div className="space-y-4 mt-8 text-slate-950">
                                                             <div className="flex gap-5 items-center -ml-1">
-                                                                <div> <IoLocationOutline className=" text-3xl text-primary hover:text-secondaryLight " /></div>
+                                                                <div> <IoLocationOutline className=" text-3xl text-primary hover:text-secondary " /></div>
                                                                 <div> <p className="text-lg hover:text-secondary">Aysha Ali Mansion(Ground Floor),  Pahartali, Raozan, Chattogram</p></div>
                                                             </div>
                                                             <div className="flex gap-5 items-center">
-                                                                <div> <MdOutlineMail className="text-2xl text-primary hover:text-secondaryLight -mb-1" /></div>
+                                                                <div> <MdOutlineMail className="text-2xl text-primary hover:text-secondary -mb-1" /></div>
                                                                 <div> <p className="text-lg hover:text-secondary">  ctgmorshed45@gmail.com </p></div>
                                                             </div>
                                                             <div className="flex gap-5 items-center">
-                                                                <div> <BsTelephone className="text-2xl text-primary hover:text-secondaryLight -mb-1" /></div>
+                                                                <div> <BsTelephone className="text-2xl text-primary hover:text-secondary -mb-1" /></div>
                                                                 <div> <p className="text-lg hover:text-secondary">  +88 01851 363745 </p></div>
                                                             </div>
                                                         </div>
