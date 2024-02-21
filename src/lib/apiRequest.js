@@ -1,8 +1,4 @@
 
-
-
-
-
 import toast from "react-hot-toast";
 
 export async function makePostRequest(
@@ -11,7 +7,6 @@ export async function makePostRequest(
 
             setLoading(true);
             const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
-            // NextFetchEvent('http://localhost:3000/api/students')
             const response = await fetch(`${baseUrl}/${endpoint}`,{
                 method: "POST",
                 headers: {

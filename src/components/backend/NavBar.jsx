@@ -18,9 +18,9 @@ const NavBar = ({setShowSidebar, showSidebar}) => {
     };
 
     return (
-        <div className='fixed top-0 left-0 md:left-64 right-0 z-50 flex items-center justify-between bg-white dark:bg-slate-800 text-slate-50  h-14 md:h-16 px-3 md:px-5 py-4 md:pr-[16rem'>
+        <div className='fixed top-0 left-0 right-0 z-10 flex items-center justify-between bg-white dark:bg-slate-800 text-slate-50  h-14 md:h-16 px-3 md:px-5 py-4 md:pr-[16rem'>
             <button> <LuAlignJustify onClick={()=> setShowSidebar(!showSidebar)} className='md:hidden text-xl md:text-2xl dark:text-slate-100 text-slate-800' /> </button>
-           
+            
             <div className='flex items-center md:space-x-3 text-xl  md:text-2xl'>
                 <ThemeToggler />
                 <DropdownMenu>

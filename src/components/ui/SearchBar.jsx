@@ -17,7 +17,7 @@ const SearchBar = ({type, name, placeholder, className}) => {
                         </div>
                     </fieldset>
                     <div className="w-full md:flex-1">
-                        <Link href="/jobs"><button className="md:flex-1 h-10 rounded-r-sm btn md:px-5 bg-rose-500 text-white w-full">Search</button></Link>
+                        <Link href="/"><button className="md:flex-1 h-10 rounded-r-sm btn md:px-5 bg-rose-500 text-white w-full">Search</button></Link>
                     </div>
                 </div> 
         </>

@@ -1,15 +1,18 @@
 'use client';
 import NavBar from '@/components/backend/NavBar';
+import Navigation from '@/components/backend/Navigation';
 import SideBar from '@/components/backend/SideBar';
 import { useState } from 'react';
 
 const Layout = ({ children }) => {
     const [showSidebar, setShowSidebar] = useState(false);
+    
     return (
         <div className='flex'>
             {/* Side Bar */}
+            {/* <Navigation/> */}
             <SideBar showSidebar={showSidebar} setShowSidebar={setShowSidebar}/>
-            <div className='lg:ml-64 ml-0 flex-grow bg-slate-100 min-h-screen'>
+            <div className='ml-0 flex-grow bg-slate-100 min-h-screen'>
                 {/* Header */}
                 <NavBar showSidebar={showSidebar} setShowSidebar={setShowSidebar}/>
                 {/* Main */}

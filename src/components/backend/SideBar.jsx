@@ -47,7 +47,7 @@ const SideBar = ({ showSidebar, setShowSidebar }) => {
             href: "/dashboard/payment",
         },
     ]
-    const singleMenuItems = [
+    const studentSubMenu = [
         {
             title: "All Students",
             icon: LucideUserRoundCheck,
@@ -99,9 +99,12 @@ const SideBar = ({ showSidebar, setShowSidebar }) => {
         { title: 'Payment', icon: LuBadgeDollarSign, href: '/dashboard/payment' },
     ];
 
-    const [openMenu, setOpenMenu] = useState(false);
     const [showIcon, setShowIcon] = useState(true);
+    const [collapsed, setCollapsed] = useState(false);
 
+    const toggleCollapse = () => {
+        setCollapsed(!collapsed);
+    };
     const handleToggleIcon = () => {
         setShowIcon(!showIcon);
     };
@@ -110,90 +113,53 @@ const SideBar = ({ showSidebar, setShowSidebar }) => {
     };
     return (
 
-        <div className={showSidebar ? 'sm:block fixed top-0 left-0 z-50 text-slate-800 dark:text-slate-200 dark:bg-slate-900 space-y-6 w-64 h-full px-4 py-4 shadow-md transition-all duration-300 ease-in-out transform translate-x-0 overflow-y-scroll' : 'hidden sm:block fixed top-0 left-0 text-slate-800 dark:text-slate-200 dark:bg-slate-900 space-y-6 w-64 h-full py-4 shadow-md transition-all duration-300 ease-in-out transform translate-x-0 overflow-y-scroll'}>
-            <Link href="#" className='mb-6'>Logo Here</Link>
-            <div className="sm:block absolute top-2 right-3 z-50">
-                <button onClick={handleToggleIcon} className="text-gray-500 hover:text-gray-700 focus:outline-none">
-                    {showSidebar ? (
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+        <div className={`bg-gray-800 text-white h-screen z-50 transition-all duration-300 ease-in-out ${collapsed ? 'w-20' : 'w-60'}`}>
+            
+            <div className="flex items-center justify-between p-4 bg-primary">
+                {!collapsed && <span className="flex font-bold text-xl">Your Logo</span>}
+                <button onClick={toggleCollapse} className="text-2xl focus:outline-none">
+                    {collapsed ? (
+                        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     ) : (
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+                        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
                         </svg>
                     )}
                 </button>
             </div>
+
+           
+            
             <div className='flex flex-col space-y-1.5 mt-12 overflow-auto '>
-                <Link
-                    href="/dashboard"
-                    onClick={() => setShowSidebar(false)}
-                    className={
-                        pathname === "/dashboard"
-                            ? "flex items-center space-x-3 font-semibold border-l-2 border-green-500 text-green-500 py-2 px-4 hover:bg-slate-800 transition-colors duration-500"
-                            : "flex items-center space-x-3 py-2 px-4 hover:bg-slate-800 transition-colors duration-300"
-                    }>
-                    <LuLayoutDashboard className='w-5 h-5' />
-                    {showIcon && (
-                        <span className=''>DashBoard</span>
-                    )}
-                </Link>
-
-
-
-
-                <Collapsible className=''>
-                    <CollapsibleTrigger
-                        onClick={() => setOpenMenu(!openMenu)}
-                        className="flex justify-between w-full items-center px-4"
-                    >
-                        <div className='flex items-center space-x-3 '>
+                {/* Navigation Links */}
+                {/* Collapsible Menu */}
+                <Collapsible>
+                    <CollapsibleTrigger className="flex justify-between w-full items-center px-4">
+                        <div className='flex items-center space-x-3'>
                             <MdCastForEducation className='w-5 h-5' />
-                            {showIcon && (
-                                <span className=''> Student </span>
-                            )}
-
+                            {!collapsed && <span className=''> Student </span>}
                         </div>
-
-                        {showIcon && (openMenu ? <ChevronDown /> : <ChevronRight />)}
-
+                        <ChevronRight />
                     </CollapsibleTrigger>
-
                     <CollapsibleContent className='ml-7 pl-5 rounded-md py-1.5 transition-transform bg-slate-800'>
-                        {singleMenuItems.map((item, i) => {
-                            const Icon = item.icon;
-                            return (
-                                <Link onClick={() => setShowSidebar(false)} key={i} href={item.href}
-                                    className={
-                                        pathname === item.href ? "flex items-center space-x-3 font-medium border-green-500 text-green-500" : "flex items-center space-x-3 py-1.5 text-sm"
-                                    }
-                                >
-                                    <Icon className='w-5 h-5' />
-                                    <span>{item.title}</span>
-                                </Link>
-                            );
-                        })}
+                        {studentSubMenu.map((item, i) => (
+                            <Link key={i} href={item.href} className={pathname === item.href ? 'flex items-center space-x-3 font-medium border-green-500 text-green-500' : 'flex items-center space-x-3 py-1.5 text-sm'}>
+                                <item.icon className={`w-5 h-5 hover:${item.title.hoverClass}`} />
+                                <span>{item.title}</span>
+                            </Link>
+                        ))}
                     </CollapsibleContent>
                 </Collapsible>
 
-
-                {singleMenu.map((item, i) => {
-                    const Icon = item.icon
-                    return (
-                        <Link onClick={() => setShowSidebar(false)} key={i} href={item.href}
-                            className={
-                                item.href == pathname ? "flex items-center space-x-3 font-semibold border-l-2 border-green-500 text-green-500 py-2 px-4 hover:bg-slate-800 transition-colors duration-500"
-                                    : "flex items-center space-x-3 py-2 px-4 hover:bg-slate-800 transition-colors duration-300"
-                            }>
-                            <Icon className='w-5 h-5' />
-                            {showIcon && (
-                                <span className=''> {item.title} </span>
-                            )}
-                        </Link>
-                    )
-                })}
-
+                {/* Single Menu Items */}
+                {singleMenu.map((item, i) => (
+                    <Link key={i} href={item.href} className={item.href === pathname ? 'flex items-center space-x-3 font-semibold border-l-2 border-green-500 text-green-500 py-2 px-4 hover:bg-slate-800 transition-colors duration-500' : 'flex items-center space-x-3 py-2 px-4 hover:bg-slate-800 transition-colors duration-300'}>
+                        <item.icon className='w-5 h-5' />
+                        {!collapsed && <span className=''>{item.title}</span>}
+                    </Link>
+                ))}
             </div>
             <div><Button className="bg-rose-500 w-full text-white"> Log Out </Button></div>
         </div>
